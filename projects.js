@@ -29,7 +29,7 @@ const projectDetails = {
   },
   
   // Imagen principal del proyecto (prototipo del proyector interactivo)
-  image: "assets/proyector-presentacion.jpg",
+  image: "/proyector.png",
   
   shortDesc: "Un proyector educativo interactivo que combina imágenes, sonido y actividades físicas para fomentar el aprendizaje activo y reducir el uso excesivo de pantallas en niños de 4 a 7 años.",
   
