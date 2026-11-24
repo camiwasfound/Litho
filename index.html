@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Aprendemos Jugando? | Camila Romero y Cristian Cruz</title>
+  
+  <!-- Tipografías elegantes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Filtro SVG para marcos y bordes ondulados orgánicos -->
+  <svg class="svg-filters" aria-hidden="true" width="0" height="0">
+    <defs>
+      <clipPath id="wavy-clip" clipPathUnits="objectBoundingBox">
+        <path d="M 0.05,0.1 
+                 C 0.15,0.02, 0.35,0.02, 0.5,0.05 
+                 C 0.65,0.08, 0.85,0.02, 0.95,0.1 
+                 C 1.02,0.25, 0.98,0.45, 0.97,0.55 
+                 C 0.96,0.7, 1.02,0.85, 0.93,0.94 
+                 C 0.8,1.02, 0.6,0.96, 0.5,0.97 
+                 C 0.35,0.98, 0.15,1.02, 0.07,0.93 
+                 C -0.01,0.82, 0.03,0.65, 0.02,0.5 
+                 C 0.01,0.35, -0.02,0.2, 0.05,0.1 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <!-- Formas orgánicas de fondo en tonos beige y café suave -->
+  <div class="blob-bg blob-1"></div>
+  <div class="blob-bg blob-2"></div>
+  <div class="blob-bg blob-3"></div>
+
+  <!-- Barra superior elegante -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="header-logo">
+        <span class="logo-sparkle">✦</span>
+        <span>Diseño Industrial</span>
+      </div>
+      <nav class="header-nav">
+        <button id="nav-btn-home" class="nav-link active">Inicio</button>
+        <button id="nav-btn-project" class="nav-link">Proyecto</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       SECCIÓN 1: PÁGINA DE INICIO (HERO)
+       ========================================================================= -->
+  <section id="section-home" class="section hero-section">
+    <div class="hero-container">
+      
+      <div class="hero-tagline-badge">
+        <span>✿ Taller y procesos de fabricación ✿</span>
+      </div>
+
+      <div class="wavy-hero-frame">
+        <h1 class="hero-title">
+          “Aprender no tiene que ser frente a una pantalla.”
+        </h1>
+      </div>
+
+      <p class="hero-subtitle">
+        Diseño de un sistema físico-digital que transforma la experiencia de aprendizaje en niños mediante proyecciones interactivas, movimiento y juego tangible.
+      </p>
+
+      <div class="hero-authors-badge">
+        <span>Por <strong>Camila Romero</strong> & <strong>Cristian Cruz</strong> • <em>Diseñadores Industriales</em></span>
+      </div>
+
+      <div class="hero-actions">
+        <button id="btn-start" class="btn-primary-wavy" aria-label="Ir a ver el proyecto">
+          <span class="btn-text">¡Vamos!</span>
+          <span class="btn-icon">☕︎</span>
+        </button>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Toca ¡Vamos! o haz clic en Proyecto para explorar</span>
+        <div class="wavy-arrow">↓</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECCIÓN 2: LÁMINA DE PRESENTACIÓN / VISTA DEL PROYECTO
+       ========================================================================= -->
+  <section id="section-project" class="section project-presentation-section hidden">
+    <div class="presentation-container">
+      
+      <!-- Encabezado de la Lámina -->
+      <header class="sheet-header">
+        <div class="sheet-pill-tag">Lámina de Presentación</div>
+        <h2 class="sheet-main-title js-trigger-modal" title="Haz clic para desglosar el apartado del proyecto">
+          ¿Aprendemos Jugando?
+        </h2>
+        <p class="sheet-subtitle">Proyector Educativo Interactivo</p>
+
+        <!-- Bloque de autores y materia -->
+        <div class="sheet-authors-bar">
+          <div class="author-item">
+            <span class="meta-icon">✦</span>
+            <span><strong>Diseñadores:</strong> Camila Romero y Cristian Cruz</span>
+          </div>
+          <div class="bar-divider">•</div>
+          <div class="author-item">
+            <span class="meta-icon">🏛</span>
+            <span><strong>Materia:</strong> Taller y procesos de fabricación</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Tarjeta Principal del Proyecto con Marco Ondulado -->
+      <div class="project-hero-card">
+        
+        <!-- Marco Ondulado Lindo para la Imagen -->
+        <div class="hero-image-column">
+          <div class="wavy-frame-wrapper js-trigger-modal" title="Haz clic sobre la foto para desglosar el proyecto">
+            <div class="wavy-frame-border"></div>
+            <img id="main-project-image" src="assets/proyector-presentacion.jpg" alt="Proyector Educativo Interactivo en uso" class="project-img">
+            <span class="image-hint-pill">Toca la foto para desglosar ✨</span>
+          </div>
+          <p class="image-caption-note">
+            💡 <em>Haz clic en la foto o en el título para abrir la ficha técnica completa.</em>
+          </p>
+        </div>
+
+        <!-- Contenido introductorio y Frase Clave -->
+        <div class="hero-text-column">
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p class="quote-text">
+              El problema no es que los niños no quieran aprender, sino que necesitan formas más dinámicas y atractivas de hacerlo.
+            </p>
+          </div>
+
+          <div class="quick-overview-box">
+            <h3 class="overview-title">Sobre la Propuesta</h3>
+            <p class="overview-description" id="quick-desc">
+              Un proyector educativo interactivo que combina imágenes, sonido y actividades físicas para fomentar el aprendizaje y reducir el uso de pantallas.
+            </p>
+
+            <div class="pilares-pills" id="pilares-container">
+              <!-- Renderizado de pilares: Aprendizaje • Interacción • Diversión • Desarrollo Infantil -->
+            </div>
+            
+            <button class="btn-inspect-prominent js-trigger-modal">
+              <span>Desglosar apartado del proyecto</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- =====================================================================
+           SECCIONES DE LA LÁMINA DE DISEÑO (ESTRUCTURA COMPLETA)
+           ===================================================================== -->
+      <div class="sheet-sections-grid">
+        
+        <!-- 1. PROBLEMÁTICA -->
+        <article class="sheet-card card-problematica">
+          <div class="card-header-iconic">
+            <span class="icon-circle">⚠️</span>
+            <div>
+              <span class="card-badge">Fase de Diagnóstico</span>
+              <h3 class="card-title">Problemática</h3>
+            </div>
+          </div>
+          <p class="card-lead-text">
+            Hoy en día los niños pasan horas frente a tablets, celulares o televisores, esta luz directa provoca cansancio visual, miopía a temprana edad y problemas de atención.
+          </p>
+          <div class="subproblem-box">
+            <h4>El uso excesivo de pantallas y la falta de actividades interactivas que estimulen el aprendizaje infantil:</h4>
+            <ul class="styled-bullet-list">
+              <li>Demasiado tiempo frente a celulares y tablets.</li>
+              <li>Poca interacción física durante el aprendizaje.</li>
+              <li>Actividades educativas poco dinámicas.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2. USUARIO -->
+        <article class="sheet-card card-usuario">
+          <div class="card-header-iconic">
+            <span class="icon-circle">🌱</span>
+            <div>
+              <span class="card-badge">Público Objetivo</span>
+              <h3 class="card-title">Usuario</h3>
+            </div>
+          </div>
+          <div class="user-highlights">
+            <span class="user-age-pill">4 a 7 años</span>
+            <span class="user-grade-pill">Preescolar y primeros años de primaria</span>
+          </div>
+          <p class="card-lead-text">
+            El usuario tiene entre 4 y 7 años y se encuentra en la etapa preescolar y primeros años de primaria. Aprende mediante actividades dinámicas y atractivas que estimulan su curiosidad y creatividad.
+          </p>
+          <p class="card-sub-text">
+            Su interacción es visual, auditiva, verbal y física, y está familiarizado con tecnologías como televisores, celulares y tablets. Se desenvuelve principalmente en casa y espacios educativos, donde realiza actividades como cuentos, reconocimiento de letras, palabras, imágenes y juegos interactivos.
+          </p>
+          <ul class="styled-bullet-list mt-3">
+            <li>Niños que aprenden mediante juegos y actividades visuales.</li>
+            <li>Usuarios que necesitan estimular su curiosidad y creatividad.</li>
+          </ul>
+        </article>
+
+        <!-- 3. INVESTIGACIÓN -->
+        <article class="sheet-card card-investigacion full-width">
+          <div class="card-header-iconic">
+            <span class="icon-circle">🔍</span>
+            <div>
+              <span class="card-badge">Metodología de Diseño</span>
+              <h3 class="card-title">Investigación</h3>
+            </div>
+          </div>
+          <p class="card-lead-text">
+            En esta problemática quise enfocarme en niños de 4 a 7 años que se encuentran en la etapa preescolar y primeros años de primaria, quienes necesitan aprender mediante actividades dinámicas, atractivas y fáciles de comprender.
+          </p>
+          <p class="card-sub-text">
+            Actualmente, muchos niños pasan gran parte de su tiempo utilizando celulares y tablets, por lo que diseñé un proyector educativo interactivo que busca reducir el uso de estas pantallas y fomentar el aprendizaje. A diferencia de los proyectores convencionales, mi propuesta permite que los niños interactúen directamente con las proyecciones mediante juegos, cuentos, letras, palabras y ejercicios educativos, convirtiendo el aprendizaje en una experiencia más divertida, participativa y dinámica.
+          </p>
+        </article>
+
+        <!-- 4. PROPUESTA (SISTEMA FÍSICO-DIGITAL) -->
+        <article class="sheet-card card-propuesta full-width">
+          <div class="card-header-iconic">
+            <span class="icon-circle">💡</span>
+            <div>
+              <span class="card-badge">Diseño del Producto</span>
+              <h3 class="card-title">Propuesta: Sistema Físico-Digital</h3>
+            </div>
+          </div>
+          <p class="card-lead-text quote-style">
+            “Un proyector educativo interactivo que combina imágenes, sonido y actividades físicas para fomentar el aprendizaje y reducir el uso de pantallas.”
+          </p>
+
+          <div class="proposal-columns">
+            <div class="proposal-subcard">
+              <h4>✦ Proyección</h4>
+              <p>
+                Proyecta cuentos, letras, palabras, imágenes y juegos educativos sobre una superficie, permitiendo una experiencia visual más dinámica.
+              </p>
+            </div>
+            <div class="proposal-subcard">
+              <h4>✦ Interacción</h4>
+              <p>
+                Los niños interactúan directamente con las proyecciones mediante movimientos y actividades, participando activamente en los juegos y ejercicios.
+              </p>
+            </div>
+          </div>
+
+          <div class="system-features-box">
+            <h4>Sistema Físico-Digital • Componentes del Flujo:</h4>
+            <div class="features-grid">
+              <div class="feature-item">
+                <span class="feature-num">01</span>
+                <span>Proyección de imágenes sobre cualquier superficie.</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-num">02</span>
+                <span>Reproducción de audio nítido para cuentos y guía.</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-num">03</span>
+                <span>Detección de movimiento e interacción corporal.</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-num">04</span>
+                <span>Actividades y juegos educativos adaptados.</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-num">05</span>
+                <span>Selección de contenido mediante una aplicación.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pilares de diseño -->
+          <div class="pilares-banner">
+            <span>APRENDIZAJE</span>
+            <span class="dot">•</span>
+            <span>INTERACCIÓN</span>
+            <span class="dot">•</span>
+            <span>DIVERSIÓN</span>
+            <span class="dot">•</span>
+            <span>DESARROLLO INFANTIL</span>
+          </div>
+        </article>
+
+        <!-- 5. JUSTIFICACIÓN TÉCNICA -->
+        <article class="sheet-card card-tecnica full-width">
+          <div class="card-header-iconic">
+            <span class="icon-circle">⚙️</span>
+            <div>
+              <span class="card-badge">Taller y Procesos de Fabricación</span>
+              <h3 class="card-title">Justificación Técnica</h3>
+            </div>
+          </div>
+          <div class="technical-paragraphs">
+            <p>
+              El diseño integra un sistema de proyección, sensores de detección, bocinas y un sistema de control que permite mostrar actividades educativas y generar respuestas visuales y auditivas.
+            </p>
+            <p>
+              La proyección funciona como medio principal de aprendizaje, mostrando cuentos, letras, imágenes y juegos sobre una superficie, evitando que los niños dependan directamente de una pantalla.
+            </p>
+            <p>
+              Los sensores permiten detectar los movimientos y la interacción de los niños con las actividades proyectadas, haciendo posible que participen físicamente en los juegos y reciban respuestas en tiempo real.
+            </p>
+            <p>
+              La integración de estos componentes convierte al producto en un sistema físico-digital de aprendizaje interactivo, diseñado para estimular la curiosidad, la participación y el desarrollo de habilidades en niños de 4 a 7 años.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Tarjeta informativa para cambiar la foto fácilmente -->
+      <div class="customization-note-card">
+        <div class="note-icon">📷</div>
+        <div class="note-content">
+          <h4>¿Quieres cambiar la foto por tu render o lámina oficial?</h4>
+          <p>
+            Solo coloca tu imagen dentro de la carpeta <code>assets/</code> y escribe el nombre del archivo en <code>projects.js</code> (en la línea <code>image: "assets/tu-imagen.jpg"</code>). ¡Se actualizará en automático en el marco ondulado!
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MODAL / APARTADO DESPLEGABLE DEL PROYECTO (AL PICARLE A LA FOTO O TÍTULO)
+       ========================================================================= -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Cerrar apartado">✕</button>
+
+      <div class="modal-body">
+        
+        <!-- Lado izquierdo: Marco ondulado lindo con la imagen -->
+        <div class="modal-image-wrapper">
+          <div class="wavy-frame-wrapper modal-frame">
+            <div class="wavy-frame-border"></div>
+            <img id="modal-img" src="assets/proyector-presentacion.jpg" alt="Proyector Educativo Interactivo" class="modal-project-img">
+          </div>
+          <div class="modal-image-caption">
+            <span class="badge-tag">Lámina de Diseño Industrial</span>
+          </div>
+        </div>
+
+        <!-- Lado derecho: ÚNICAMENTE el texto solicitado -->
+        <div class="modal-info">
+          
+          <div class="modal-header-meta">
+            <span class="meta-subject-badge">Materia: Taller y procesos de fabricación</span>
+            <h3 id="modal-title" class="modal-project-title">¿Aprendemos Jugando?</h3>
+            <p class="modal-project-subtitle">Proyector Educativo Interactivo</p>
+            
+            <div class="modal-authors">
+              <span class="author-icon">✦</span>
+              <span><strong>Diseñadores:</strong> Camila Romero y Cristian Cruz — <em>Diseñadores Industriales</em></span>
+            </div>
+          </div>
+
+          <!-- Materia explícita -->
+          <div class="modal-course-card">
+            <span class="course-label">Materia:</span>
+            <span class="course-name">Taller y procesos de fabricación</span>
+          </div>
+
+          <!-- CONTENIDO EXCLUSIVO DEL APARTADO DESPLEGADO -->
+          <div class="modal-feature-box">
+            <h4 class="feature-box-title">¿Por qué elegir nuestro proyector educativo?</h4>
+            <p class="feature-box-text">
+              A diferencia de un proyector convencional, nuestro producto no se limita a mostrar imágenes o videos, sino que permite que los niños interactúen directamente con las proyecciones mediante juegos y actividades educativas. Está diseñado para niños de 4 a 7 años y combina imágenes, sonidos y movimiento para crear experiencias de aprendizaje más dinámicas y divertidas. Además, busca reducir la dependencia de celulares y tablets, estimulando la curiosidad, creatividad, coordinación y participación de los pequeños.
+            </p>
+            <div class="feature-slogan-wrap">
+              <span class="feature-slogan-pill">No solo lo veas, ¡vívelo! ✨</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pie de página suave -->
+  <footer class="site-footer">
+    <p class="footer-copy">
+      Lámina de Presentación • <strong>Camila Romero</strong> & <strong>Cristian Cruz</strong>
+    </p>
+    <p class="footer-sub">Materia: Taller y procesos de fabricación • Diseño Industrial</p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
